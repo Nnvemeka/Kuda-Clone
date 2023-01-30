@@ -1,9 +1,11 @@
-import "./App.css";
+import Header from "./Components/Header/Header";
+import LandingPage from "./Pages/landing-page/LandingPage";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Kuda Clone</h1>
+			<Header />
+			<LandingPage />
 		</div>
 	);
 }
