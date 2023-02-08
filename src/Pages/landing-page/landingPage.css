@@ -3,12 +3,30 @@
     /* padding: 4.8rem 0 9.6rem 0; */
 }
 
+.heading-secondary {
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.1px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #40196d;
+}
+
+.description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
 /***************************************** Hero section *******************************************/
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 3.2rem 0;
+    padding: 4.8rem 0;
+    max-width: 92rem;
+    margin: 0 auto;
 }
 
 .hero-img {
@@ -19,7 +37,7 @@
     text-align: left;
 }
 
-.heading-primary {
+.hero-heading-primary {
     font-size: 4.4rem;
     line-height: 1.05;
     margin-bottom: 2rem;
@@ -37,4 +55,44 @@
     margin-bottom: 2rem;
     color: #000;
     max-width: 270px;
+}
+
+
+/***************************************** Save section *******************************************/
+
+
+.save {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 9.6rem 0;
+}
+
+.save-text-box {
+    text-align: left;
+}
+
+.save-img {
+    width: 60%;
+}
+
+.save-img-box {
+    position: relative;
+}
+
+.save-img-box::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+
+    /* 80% of parent's width */
+    padding-bottom: 80%;
+    background-color: #d0d0fa;
+    z-index: -2;
 }

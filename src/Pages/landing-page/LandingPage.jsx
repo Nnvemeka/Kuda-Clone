@@ -5,9 +5,9 @@ const LandingPage = () => {
 	return (
 		<main className="landing-page">
 			{/* Hero section */}
-			<section className="hero container">
+			<section className="hero">
 				<div className="hero-text-box">
-					<h1 className="heading-primary">The money app for Africans.</h1>
+					<h1 className="hero-heading-primary">The money app for Africans.</h1>
 					<p className="hero-description">
 						Save, spend, send and invest money across borders.
 					</p>
@@ -22,6 +22,26 @@ const LandingPage = () => {
 						alt="Kuda Bank Illustration"
 					/>
 				</div>
+			</section>
+
+			{/* Body section */}
+			<section className="container">
+				{/* Save section */}
+				<section className="save">
+					<div className="save-text-box">
+						<h3 className="heading-secondary">Save</h3>
+						<p className="description">
+							Putting money away for the future is smart but it takes discipline
+							- something humans don’t have in abundance. We’re using technology
+							to solve that by automating saving. You set an amount to save and
+							the Kuda app takes care of the rest, prompt interest payout
+							included.
+						</p>
+					</div>
+					<div className="save-img-box">
+						<img class="save-img" src="src/Assets/img/KudaSave.png" alt="" />
+					</div>
+				</section>
 			</section>
 		</main>
 	);
