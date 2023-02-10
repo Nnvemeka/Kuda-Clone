@@ -3,7 +3,7 @@ import "./landingPage.css";
 
 const LandingPage = () => {
 	return (
-		<main className="landing-page">
+		<main className="landing-page container-main">
 			{/* Hero section */}
 			<section className="hero">
 				<div className="hero-text-box">
@@ -29,8 +29,8 @@ const LandingPage = () => {
 				{/* Save section */}
 				<section className="save">
 					<div className="save-text-box">
-						<h3 className="heading-secondary">Save</h3>
-						<p className="description">
+						<h3 className="save-heading">Save</h3>
+						<p className="save-description">
 							Putting money away for the future is smart but it takes discipline
 							- something humans don’t have in abundance. We’re using technology
 							to solve that by automating saving. You set an amount to save and
@@ -39,7 +39,7 @@ const LandingPage = () => {
 						</p>
 					</div>
 					<div className="save-img-box">
-						<img class="save-img" src="src/Assets/img/KudaSave.png" alt="" />
+						<img class="save-img" src="src/Assets/img/kudaSave.png" alt="" />
 					</div>
 				</section>
 			</section>

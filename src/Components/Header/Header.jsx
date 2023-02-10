@@ -24,28 +24,40 @@ const Header = () => {
 				<nav class="main-nav">
 					<ul class="main-nav-list">
 						<li class="main-nav-item dropdown">
-							<p className="main-nav-link">Features</p>
-							<svg width="8" height="6" viewBox="0 0 9 6" fill="none">
-								<path d="M4.5 6L0 0H9L4.5 6Z" fill="#40196D"></path>
-							</svg>
+							<p className="main-nav-link">
+								Features
+								<span>
+									<svg width="8" height="6" viewBox="0 0 9 6" fill="none">
+										<path d="M4.5 6L0 0H9L4.5 6Z" fill="#40196D"></path>
+									</svg>
+								</span>
+							</p>
 						</li>
 						<li class="main-nav-item">
 							<a class="main-nav-link" href="#">
 								Business
+								<span className="beta">Beta</span>
 							</a>
-							<span className="beta">Beta</span>
 						</li>
 						<li class="main-nav-item">
-							<p className="main-nav-link">Company</p>
-							<svg width="8" height="6" viewBox="0 0 9 6" fill="none">
-								<path d="M4.5 6L0 0H9L4.5 6Z" fill="#40196D"></path>
-							</svg>
+							<p className="main-nav-link">
+								Company
+								<span>
+									<svg width="8" height="6" viewBox="0 0 9 6" fill="none">
+										<path d="M4.5 6L0 0H9L4.5 6Z" fill="#40196D"></path>
+									</svg>
+								</span>
+							</p>
 						</li>
 						<li class="main-nav-item">
-							<p className="main-nav-link">Help</p>
-							<svg width="8" height="6" viewBox="0 0 9 6" fill="none">
-								<path d="M4.5 6L0 0H9L4.5 6Z" fill="#40196D"></path>
-							</svg>
+							<p className="main-nav-link">
+								Help
+								<span>
+									<svg width="8" height="6" viewBox="0 0 9 6" fill="none">
+										<path d="M4.5 6L0 0H9L4.5 6Z" fill="#40196D"></path>
+									</svg>
+								</span>
+							</p>
 						</li>
 					</ul>
 				</nav>

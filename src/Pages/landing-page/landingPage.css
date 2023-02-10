@@ -3,30 +3,16 @@
     /* padding: 4.8rem 0 9.6rem 0; */
 }
 
-.heading-secondary {
-    font-size: 2.4rem;
-    line-height: 1.05;
-    margin-bottom: 1.2rem;
-    letter-spacing: 0.1px;
-    line-height: 1.1;
-    font-weight: 700;
-    color: #40196d;
-}
-
-.description {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-}
 
 /***************************************** Hero section *******************************************/
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 4.8rem 0;
+    padding: 10rem 0;
     max-width: 92rem;
     margin: 0 auto;
+    padding-bottom: 9.6rem;
 }
 
 .hero-img {
@@ -38,15 +24,14 @@
 }
 
 .hero-heading-primary {
-    font-size: 4.4rem;
+    font-size: 5.2rem;
     line-height: 1.05;
     margin-bottom: 2rem;
-    letter-spacing: 0.1px;
+    letter-spacing: -3px;
     line-height: 1.1;
     font-weight: 700;
     color: #40196d;
     max-width: 395px;
-
 }
 
 .hero-description {
@@ -67,16 +52,38 @@
     margin: 9.6rem 0;
 }
 
+.save-heading {
+    font-size: 4.4rem;
+    line-height: 1.05;
+    margin-bottom: 2.4rem;
+    letter-spacing: -3px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #40196d;
+}
+
+.save-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555;
+    width: 80%;
+}
+
 .save-text-box {
     text-align: left;
 }
 
 .save-img {
     width: 60%;
+    
 }
 
 .save-img-box {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .save-img-box::before {
@@ -89,10 +96,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 80%;
+    width: 90%;
 
-    /* 80% of parent's width */
-    padding-bottom: 80%;
+    /* 90% of parent's width */
+    padding-bottom: 90%;
     background-color: #d0d0fa;
     z-index: -2;
 }
