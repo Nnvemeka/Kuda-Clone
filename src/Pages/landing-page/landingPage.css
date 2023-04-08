@@ -6,10 +6,10 @@
 
 /***************************************** Hero section *******************************************/
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    padding: 10rem 0;
+    height: 100vh;
+    padding: 15rem 4rem;
     max-width: 92rem;
     margin: 0 auto;
     padding-bottom: 9.6rem;
@@ -40,6 +40,118 @@
     margin-bottom: 2rem;
     color: #000;
     max-width: 270px;
+}
+
+/* .hero-img-box {
+    position: relative;
+} */
+
+@keyframes spinner1 {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+  }
+  .spin1-cover {
+    border: solid 2px #ebeef0;
+    border-radius: 50%; 
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 53.5%;
+   
+  }
+
+  .spin1::after {
+    animation: 5s linear infinite spinner1;
+    animation-play-state: inherit;
+    content: url("src/Assets/img/card.png");
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+    z-index: 9;
+}
+@keyframes spinner2 {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+  }
+  .spin2-cover {
+    border: solid 2px #ebeef0;
+    border-radius: 50%; 
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 29.5%;
+    left: 57.5%;
+  }
+.spin2::after {
+    animation: 6.5s linear infinite spinner2;
+    animation-play-state: inherit;
+    border-radius: 50%;
+    content: url("src/Assets/img/home.png");
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+    z-index: 9;
+}
+@keyframes spinner3 {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+  }
+  .spin3-cover {
+    border: solid 2px #ebeef0;
+    border-radius: 50%; 
+    height: 182px;
+    width: 182px;
+    position: absolute;
+    top: 39%;
+    left: 62.5%;
+  }
+.spin3::after {
+    animation: 3.5s linear infinite spinner3;
+    animation-play-state: inherit;
+    /* border: solid 2px #ebeef0; */
+    border-radius: 50%;
+    content: url("src/Assets/img/bar.png");
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+    z-index: 1;
+
+}
+
+.heroIcon {
+    position: absolute;
+    top: 18%;
+    left: 59%;
+    z-index: 2;
+
+}
+.heroIcon img{
+    width: 50%;
 }
 
 

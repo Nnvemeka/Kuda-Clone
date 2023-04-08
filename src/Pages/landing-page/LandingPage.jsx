@@ -16,11 +16,20 @@ const LandingPage = () => {
 					</a>
 				</div>
 				<div className="hero-img-box">
-					<img
+					{/* <img
 						class="hero-img"
 						src="src/Assets/img/kudaHero.png"
 						alt="Kuda Bank Illustration"
-					/>
+					/> */}
+					<div className="spin1"></div>
+					<div className="spin1-cover"></div>
+					<div className="spin2"></div>
+					<div className="spin2-cover"></div>
+					<div className="spin3"></div>
+					<div className="spin3-cover"></div>
+					<div className="heroIcon">
+						<img src="src/Assets/img/heroIcon.png" alt="" />
+					</div>
 				</div>
 			</section>
 
