@@ -6,6 +6,7 @@
 
 /***************************************** Hero section *******************************************/
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -42,9 +43,10 @@
     max-width: 270px;
 }
 
-/* .hero-img-box {
-    position: relative;
-} */
+.hero-img-box {
+display: flex;
+justify-content: end;
+}
 
 @keyframes spinner1 {
     0% {
@@ -57,11 +59,11 @@
   .spin1-cover {
     border: solid 2px #ebeef0;
     border-radius: 50%; 
-    height: 400px;
-    width: 400px;
+    height: 390px;
+    width: 390px;
     position: absolute;
-    top: 20%;
-    left: 53.5%;
+    top: 19.5%;
+    left: 53%;
    
   }
 
@@ -73,7 +75,7 @@
     width: 320px;
     position: absolute;
     top: 55%;
-    left: 70%;
+    left: 75%;
     transform: translate3d(-50%, -50%, 0);
     will-change: transform;
     z-index: 9;
@@ -89,11 +91,11 @@
   .spin2-cover {
     border: solid 2px #ebeef0;
     border-radius: 50%; 
-    height: 300px;
-    width: 300px;
+    height: 295px;
+    width: 295px;
     position: absolute;
-    top: 29.5%;
-    left: 57.5%;
+    top: 28%;
+    left: 58.5%;
   }
 .spin2::after {
     animation: 6.5s linear infinite spinner2;
@@ -104,7 +106,7 @@
     width: 250px;
     position: absolute;
     top: 55%;
-    left: 70%;
+    left: 75%;
     transform: translate3d(-50%, -50%, 0);
     will-change: transform;
     z-index: 9;
@@ -123,8 +125,8 @@
     height: 182px;
     width: 182px;
     position: absolute;
-    top: 39%;
-    left: 62.5%;
+    top: 38.5%;
+    left: 65%;
   }
 .spin3::after {
     animation: 3.5s linear infinite spinner3;
@@ -136,7 +138,7 @@
     width: 150px;
     position: absolute;
     top: 55%;
-    left: 70%;
+    left: 75%;
     transform: translate3d(-50%, -50%, 0);
     will-change: transform;
     z-index: 1;
@@ -146,12 +148,12 @@
 .heroIcon {
     position: absolute;
     top: 18%;
-    left: 59%;
+    left: 60%;
     z-index: 2;
 
 }
 .heroIcon img{
-    width: 50%;
+    width: 64%;
 }
 
 
@@ -161,7 +163,7 @@
 .save {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 9.6rem 0;
+    margin: 15rem 0;
 }
 
 .save-heading {
@@ -184,10 +186,11 @@
 
 .save-text-box {
     text-align: left;
+    align-self: center;;
 }
 
 .save-img {
-    width: 60%;
+    width: 80%;
     
 }
 
@@ -214,4 +217,93 @@
     padding-bottom: 90%;
     background-color: #d0d0fa;
     z-index: -2;
+}
+/***************************************** Spend section *******************************************/
+
+
+.spend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20rem 0;
+}
+
+.spend-heading {
+    font-size: 4.4rem;
+    line-height: 1.05;
+    margin-bottom: 2.4rem;
+    letter-spacing: -3px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #40196d;
+}
+
+.spend-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555;
+    width: 80%;
+}
+
+.spend-text-box {
+    text-align: left;
+    margin-left: 10rem;
+    align-self: center;
+}
+
+.spend-img {
+    width: 60%;
+}
+
+.spend-img-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spend-img-box::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+
+    width: 62%;
+
+    /* 90% of parent's width */
+    padding-bottom: 62%;
+    background-color: #c2eff8;
+    z-index: -2;
+}
+
+/***************************************** Send section *******************************************/
+
+
+.send-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-img-box::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+
+  /* 90% of parent's width */
+  padding-bottom: 90%;
+  background-color: #f7ebd8;
+  z-index: -2;
 }
