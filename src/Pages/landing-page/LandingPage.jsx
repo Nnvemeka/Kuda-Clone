@@ -47,7 +47,7 @@ const LandingPage = () => {
 					</div>
 				</section>
 
-				{/* Save section */}
+				{/* Spend section */}
 				<section className="spend">
 					<div className="spend-img-box">
 						<img class="spend-img" src="src/Assets/img/spend.png" alt="" />
@@ -80,13 +80,40 @@ const LandingPage = () => {
 						</p>
 					</div>
 					<div className="send-img-box">
-						<img class="save-img" src="src/Assets/img/kudaSave.png" alt="" />
+						<img class="send-img" src="src/Assets/img/send.png" alt="" />
 					</div>
 				</section>
 
-				<section className="spend">
-					<div className="spend-img-box">
-						<img class="spend-img" src="src/Assets/img/spend.png" alt="" />
+				<section className="invest">
+					<div className="invest-img-box">
+						<img class="invest-img" src="src/Assets/img/invest.png" alt="" />
+						<div class="invest-img-list">
+							<img
+								class="invest-img-item"
+								src="src/Assets/img/investTesla.png"
+								alt=""
+							/>
+							<img
+								class="invest-img-item"
+								src="src/Assets/img/investFacebook.png"
+								alt=""
+							/>
+							<img
+								class="invest-img-item"
+								src="src/Assets/img/investGoogle.png"
+								alt=""
+							/>
+							<img
+								class="invest-img-item"
+								src="src/Assets/img/investApple.png"
+								alt=""
+							/>
+							<img
+								class="invest-img-item"
+								src="src/Assets/img/investAmazon.png"
+								alt=""
+							/>
+						</div>
 					</div>
 					<div className="spend-text-box">
 						<h3 className="spend-heading">Invest</h3>
@@ -101,18 +128,39 @@ const LandingPage = () => {
 
 				<section className="save">
 					<div className="save-text-box">
-						<h3 className="save-heading">We’re always</h3>
-						<h3 className="save-heading">happy to help you.</h3>
+						<h3 className="save-heading">
+							We’re always <br />
+							happy to help you.
+						</h3>
 						<p className="save-description">
 							You can chat with us on the app, slide into our DMs, tweet, leave
 							an Instagram comment, send an email or call. However you choose to
 							reach out, there’ll always be a friendly person there to make your
 							life easy.
 						</p>
-						<a href="https://www.instagram.com">Contact us</a>
+						<a className="contactUs" href="#">
+							Contact us &rarr;
+						</a>
 					</div>
-					<div className="save-img-box">
-						<img class="save-img" src="src/Assets/img/kudaSave.png" alt="" />
+					<div className="">
+						<img class="save-img" src="src/Assets/img/kudaHero.png" alt="" />
+					</div>
+				</section>
+				<section className="cta">
+					<div className="cta-items">
+						<div className="hero-text-box">
+							<h1 className="heading">
+								The money app for <br />
+								Africans.
+							</h1>
+							<p className="description">
+								Save, spend, send and invest money across borders.
+							</p>
+							<a className="btn" href="#">
+								Join Kuda
+							</a>
+						</div>
+						<div></div>
 					</div>
 				</section>
 			</section>

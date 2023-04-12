@@ -29,7 +29,6 @@
     line-height: 1.05;
     margin-bottom: 2rem;
     letter-spacing: -3px;
-    line-height: 1.1;
     font-weight: 700;
     color: #40196d;
     max-width: 395px;
@@ -163,11 +162,11 @@ justify-content: end;
 .save {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 15rem 0;
+    margin-top: 15rem;
 }
 
 .save-heading {
-    font-size: 4.4rem;
+    font-size: 4rem;
     line-height: 1.05;
     margin-bottom: 2.4rem;
     letter-spacing: -3px;
@@ -224,11 +223,11 @@ justify-content: end;
 .spend {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 20rem 0;
+  margin-top: 20rem;
 }
 
 .spend-heading {
-    font-size: 4.4rem;
+    font-size: 4rem;
     line-height: 1.05;
     margin-bottom: 2.4rem;
     letter-spacing: -3px;
@@ -282,6 +281,9 @@ justify-content: end;
 
 /***************************************** Send section *******************************************/
 
+.send-img {
+  width: 90%;
+}
 
 .send-img-box {
   position: relative;
@@ -306,4 +308,92 @@ justify-content: end;
   padding-bottom: 90%;
   background-color: #f7ebd8;
   z-index: -2;
+}
+
+/***************************************** Invest section *******************************************/
+.invest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10rem;
+}
+
+.invest-img {
+  width: 70%;
+  padding-bottom: 3rem;
+}
+
+.invest-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invest-img-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, 140%);
+  display: flex;
+  align-items: center;
+}
+
+.invest-img-item {
+  width: 30%;
+}
+
+.invest-img-box::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50%;
+
+  /* 60% of parent's width */
+  padding-bottom: 50%;
+  background-color: #d7f8eb;
+  z-index: -2;
+}
+
+.contactUs {
+  text-decoration: none;
+  color: #40196d;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: 1.5px solid #40196d;
+}
+
+/***************************************** Cta section *******************************************/
+
+.cta {
+  margin-top: 6rem;
+  background-color: #eff1ff;
+  border-radius: 9px;
+}
+
+.cta-items {
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta .heading {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #40196d;
+}
+.cta .description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  
+  margin-bottom: 2rem;
+  color: #555;
 }
