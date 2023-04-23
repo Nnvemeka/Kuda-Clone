@@ -67,9 +67,9 @@ justify-content: end;
   }
 
   .spin1::after {
-    animation: 5s linear infinite spinner1;
+    animation: 5.5s linear infinite spinner1;
     animation-play-state: inherit;
-    content: url("src/Assets/img/card.png");
+    content: url("src/Assets/img/dollar.png");
     height: 320px;
     width: 320px;
     position: absolute;
@@ -100,7 +100,7 @@ justify-content: end;
     animation: 6.5s linear infinite spinner2;
     animation-play-state: inherit;
     border-radius: 50%;
-    content: url("src/Assets/img/home.png");
+    content: url("src/Assets/img/card.png");
     height: 250px;
     width: 250px;
     position: absolute;
@@ -128,13 +128,12 @@ justify-content: end;
     left: 65%;
   }
 .spin3::after {
-    animation: 3.5s linear infinite spinner3;
+    animation: 4.5s linear infinite spinner3;
     animation-play-state: inherit;
-    /* border: solid 2px #ebeef0; */
     border-radius: 50%;
-    content: url("src/Assets/img/bar.png");
-    height: 150px;
-    width: 150px;
+    content: url("src/Assets/img/naira.png");
+    height: 390px;
+    width: 390px;
     position: absolute;
     top: 55%;
     left: 75%;
@@ -371,9 +370,12 @@ justify-content: end;
 /***************************************** Cta section *******************************************/
 
 .cta {
+  position: relative;
   margin-top: 6rem;
   background-color: #eff1ff;
   border-radius: 9px;
+  margin-bottom: 16rem;
+  overflow: hidden;
 }
 
 .cta-items {
@@ -396,4 +398,117 @@ justify-content: end;
   
   margin-bottom: 2rem;
   color: #555;
+}
+
+.cta img {
+  position: absolute;
+  width: 50%;
+  top: -50%;
+  left: 50%;
+  transform: rotate(-25deg);
+}
+
+
+/********************************************* FOOTER *******************************************************/
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+}
+
+.link-header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #40196d;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 9px;
+  color: #555;
+  /* Only for btn */
+  border: none;
+  cursor: pointer;
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer2 {
+  margin-top: 4.4rem;
+  overflow: hidden;
+}
+
+.footer2 img {
+  width: 10%;
+  cursor: pointer;
+}
+
+.product {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer-img {
+  margin-right: 1rem;
+}
+
+.footer3 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  margin-top: 6rem;
+  overflow: hidden;
+}
+
+.email {
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icon-wrapper {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 1rem;
+  border: 1px solid #40196d;
+  background-color: #f6f0f9e5;
+  cursor: pointer;
+}
+
+.social-icon {
+  color: #40196d;
+  font-size: 1.2rem;
+}
+
+.address {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #777;
+}
+
+.footer4 {
+  color: #aaa;
+  margin-top: 6rem;
+  overflow: hidden;
+}
+
+.footer4 div {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.4;
 }
